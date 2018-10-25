@@ -73,7 +73,7 @@ entry_points['asdf_extensions'] = [
     'astropy-asdf = astropy.io.misc.asdf.extension:AstropyAsdfExtension',
 ]
 
-min_numpy_version = 'numpy>=' + astropy.__minimum_numpy_version__
+min_numpy_version = 'numpy>=' + astropy.__minimum_numpy_version__ + ',<1.15.3'
 setup_requires = [min_numpy_version]
 
 # Make sure to have the packages needed for building astropy, but do not require them
